@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root {
+  --mi-color: #4344d2;
+}
+
+.formulario-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid var(--mi-color);
+  border-radius: 5px;
+}
+
+.formulario-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formulario-container input,
+.formulario-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--mi-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #282c34;
+}
+
+.formulario-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario-container button:hover {
+  background-color: var(--mi-color);
+}
+form {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.seccion-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.content-formulario {
+  width: 850px;
+  padding: 45px;
+  border: 1px solid var(--mi-color);
+  border-radius: 30px;
+  box-shadow: 0px 5px 30px #2373ff54;
+
+
+  button.boton-principal {
+    margin: 20px;
+    padding: 12px 40px;
+    border: 0px;
+    border-radius: 10px;
+    background: #00abe4;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: var(--mi-color);
+      box-shadow: 0px 2px 10px var(--mi-color);
+    }
+}
+}
+.seccion-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  width: 48%;
+
+  input,select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #282c34;
+    color: #fff;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #2373ff;
+    }
+  }
+}

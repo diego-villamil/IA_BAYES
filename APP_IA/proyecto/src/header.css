@@ -1,0 +1,67 @@
+/* Estilos para el encabezado */
+:root{
+    --mi-color: #4344d2;
+}
+.bg-light{
+    background-color: var(--mi-color) !important;
+
+}
+.header {
+    color: white;/* Cambiar el color de fondo según sea necesario */
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: var(--mi-color);;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(0,0,0,.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .nav-item {
+    margin-left: 1rem;
+   border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    
+    &:hover {
+      background-color: white;
+    }
+  }
+  
+  .nav-link {
+    color: white;
+    font-size: 14px;/* Cambiar el color del texto según sea necesario */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #4344d2; /* Cambiar el color al pasar el mouse según sea necesario */
+  }
+  
+  .navbar-brand{
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+  }
